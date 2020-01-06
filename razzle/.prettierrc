@@ -1,0 +1,6 @@
+{
+  "trailingComma": "es5",
+  "graphql": true,
+  "singleQuote": true,
+  "printWidth": 120
+}
