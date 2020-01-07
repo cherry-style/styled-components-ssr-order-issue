@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const AnchorOrBasicButton = ({ className, useAnchorTag, children }) => {
   if (useAnchorTag) {
@@ -9,17 +9,10 @@ export const AnchorOrBasicButton = ({ className, useAnchorTag, children }) => {
   return <BasicButton className={className}>{children}</BasicButton>;
 };
 
-const commonButtonStyle = css`
-  /* This style will override StyledButton's style */
-  padding: 0;
-`;
-
 const BasicButton = styled.button`
-  ${commonButtonStyle};
-  background-color: blue;
+  background-color: red;
 `;
 
 const AnchorButton = styled.a`
-  ${commonButtonStyle};
   background-color: red;
 `;

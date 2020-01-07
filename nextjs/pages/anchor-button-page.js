@@ -8,8 +8,8 @@ const AnchorButtonPage = () => (
   <>
     <NavigationBar />
     <Container>
-      <StyledButton size="lg" useAnchorTag={true}>
-        AnchorButton
+      <StyledButton color="yellow" useAnchorTag={true}>
+        Yellow AnchorButton
       </StyledButton>
     </Container>
   </>
