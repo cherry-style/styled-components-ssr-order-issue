@@ -8,12 +8,6 @@ type Props = {
   useAnchorTag: boolean;
 };
 
-export const StyledButton: React.FC<Props> = ({ size, useAnchorTag, children }) => (
-  <ExtendedButton size={size} useAnchorTag={useAnchorTag}>
-    {children}
-  </ExtendedButton>
-);
-
-const ExtendedButton = styled(AnchorOrBasicButton)<Props>`
+export const StyledButton = styled(AnchorOrBasicButton)<Props>`
   padding: ${props => (props.size === 'lg' ? 48 : 24)}px;
 `;

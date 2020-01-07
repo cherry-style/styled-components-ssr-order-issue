@@ -14,17 +14,17 @@ export const AnchorOrBasicButton: React.FC<Props> = ({ className, useAnchorTag, 
   return <BasicButton className={className}>{children}</BasicButton>;
 };
 
-const buttonStyle = css`
-  border-radius: 3;
+const commonButtonStyle = css`
+  /* This style will override StyledButton's style */
   padding: 0;
 `;
 
 const BasicButton = styled.button`
-  ${buttonStyle};
+  ${commonButtonStyle};
   background-color: blue;
 `;
 
 const AnchorButton = styled.a`
-  ${buttonStyle};
+  ${commonButtonStyle};
   background-color: red;
 `;
