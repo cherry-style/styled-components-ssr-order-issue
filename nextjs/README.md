@@ -6,4 +6,4 @@
 
 2. Click `AnchorButtonPage` link.
 
-3. AnchorButton will have zero padding even though the size is specified.
+3. AnchorButton will be red even though the color is specified.
